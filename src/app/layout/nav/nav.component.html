@@ -1,0 +1,16 @@
+<section class="navbar" [ngClass]="{'collapsed': collapsed}">
+    <section class="navbar-logo">
+        <a routerLink="/">
+            <img src="/assets/carservice-logo.png" alt="carservice-logo">
+        </a>
+    </section>
+    <section class="navbar-menu">
+        <a routerLink="/"><i class="fas fa-house"></i> <span class="navbar-menu-text">HOMEPAGE</span></a>
+        <a routerLink="/orders"><i class="fas fa-folder"></i> <span class="navbar-menu-text">ORDERS</span></a>
+        <a routerLink="/clients"><i class="fa-solid fa-address-book"></i> <span class="navbar-menu-text">CLIENTS</span></a>
+        <a routerLink="/planning"><i class="fa-solid fa-calendar-days"></i> <span class="navbar-menu-text">PLANNING</span></a>
+    </section>
+    <section class="navbar-collapse" (click)="collapse()">
+        <i class="fa-solid" [ngClass]="collapsed ? 'fa-angles-right' : 'fa-angles-left'"></i> <span class="navbar-collapse-text">COLLAPSE</span>
+    </section>
+</section>

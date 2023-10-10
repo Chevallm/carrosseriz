@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+
+:root {
+    display: flex;
+    display: block;
+    height: 100%;
+}
+
+mat-sidenav {
+    background-color: black;
+    color: white;
+}
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+aside {
+    height: 100%;
+}
